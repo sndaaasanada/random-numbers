@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Edge Home Proxy",
+  "version": "1.1.0",
+  "description": "Route Microsoft Edge browser traffic through your authenticated HTTPS proxy.",
+  "permissions": [
+    "proxy",
+    "storage",
+    "alarms",
+    "offscreen",
+    "geolocation",
+    "webRequest",
+    "webRequestAuthProvider"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Edge Home Proxy"
+  }
+}
